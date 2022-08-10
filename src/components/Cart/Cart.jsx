@@ -9,6 +9,7 @@ export default function Cart() {
   const { cartItems, cartTotalItems, cartTotalPrice } = cartStore(
     (state) => state
   );
+
   return (
     <div className="container">
       <div className="cart--details">

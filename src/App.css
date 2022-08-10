@@ -2,3 +2,50 @@
   width: 100%;
   margin: 0 auto;
 }
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: wheat;
+  width: 100%;
+  z-index: 20;
+  padding: 0 5rem;
+}
+.head a {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  background: rgba(47, 163, 47, 0.8);
+  color: white;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head a:hover {
+  cursor: pointer;
+  background: rgba(47, 163, 47, 1);
+  transform: translate(1px, -1px);
+}
+.cart--count {
+  position: relative;
+}
+.count {
+  position: absolute;
+  color: white;
+  top: -5px;
+  right: 0;
+  background: red;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  z-index: 10;
+}

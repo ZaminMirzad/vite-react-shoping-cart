@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import { Router } from "@reach/router";
+import { Router, Link } from "@reach/router";
 import { ToastContainer } from "react-toastify";
+import { BsMinecartLoaded } from "react-icons/bs";
 
 //local imports
 import "./App.css";
@@ -13,13 +14,22 @@ import Cart from "./components/Cart/Cart";
 
 function App() {
   const { fetchProducts } = productsStore((state) => state);
-  const { updateTotalPrice } = cartStore((state) => state);
+  const { cartTotalItems, updateTotalPrice } = cartStore((state) => state);
   useEffect(() => {
     fetchProducts();
     updateTotalPrice();
   }, []);
   return (
     <div className="App">
+      <div className="head">
+        <h1>Welcome The Store</h1>
+        <span className="cart--count">
+          <span className="count">{cartTotalItems}</span>
+          <Link to="/cart">
+            <BsMinecartLoaded />
+          </Link>
+        </span>
+      </div>
       <Router>
         <Products path="/" />
         <Product path="/products/:id" />

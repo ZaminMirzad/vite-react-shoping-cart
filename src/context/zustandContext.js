@@ -7,7 +7,7 @@ export const productsStore = create((set) => ({
   status: "",
   fetchProducts: async () => {
     set({ status: "loading" });
-    const res = await axios.get(`https://fakestoreapi.com/products?limit=10`);
+    const res = await axios.get(`https://fakestoreapi.com/products?limit=15`);
     set({
       products: res.data,
       status: "loaded",
@@ -16,7 +16,7 @@ export const productsStore = create((set) => ({
   fetchByCategory: async (cat) => {
     set({ status: "loading" });
     if (cat === "all") {
-      const res = await axios.get(`https://fakestoreapi.com/products?limit=10`);
+      const res = await axios.get(`https://fakestoreapi.com/products?limit=15`);
       set({
         products: res.data,
         status: "loaded",

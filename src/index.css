@@ -8,7 +8,13 @@ html,
 body {
   font-family: Poppins, sans-serif;
 }
-
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  background: green;
+  color: white;
+  padding: 0.5rem;
+}
 .container {
   margin: 1rem 6rem;
 }
