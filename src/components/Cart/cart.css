@@ -1,0 +1,40 @@
+.cart--details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spans {
+  display: flex;
+  gap: 1rem;
+  font-size: large;
+}
+
+.spans span {
+  background: green;
+  color: aliceblue;
+  padding-left: 1rem;
+  border-radius: 0.2rem;
+  font-size: larger;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.spans span strong {
+  font-weight: 500;
+  font-size: 1.5rem;
+  background: violet;
+  padding: 0.5rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.item--counts {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.item--counts button {
+  padding: 0.5rem;
+}

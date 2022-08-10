@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans");
+/* DEFAULT STYLE */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.card-container:hover {
+  cursor: pointer;
+}
+
+.square {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 10px 30px #d9dbdf;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+}
+.square:hover {
+  -webkit-transform: translate(10px, -10px);
+  -ms-transform: translate(10px, -10px);
+  transform: translate(5px, -5px);
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 1rem;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.h1 {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+p {
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: rgb(121, 121, 121);
+  line-height: 18px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.button {
+  background-color: rgba(38, 177, 98, 0.8);
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: "merriweather";
+  float: right;
+  border: none;
+  outline: 2px solid rgba(62, 221, 132, 0);
+  transition: all 0.4s ease;
+}
+.button:hover {
+  outline: 2px solid rgba(62, 221, 132, 0.9);
+  background-color: rgb(38, 177, 98);
+}

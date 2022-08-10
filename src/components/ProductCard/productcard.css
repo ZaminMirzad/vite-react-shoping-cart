@@ -1,0 +1,112 @@
+.wrapper {
+  /* height: 310px; */
+  width: 70%;
+  margin: 40px auto;
+  border-radius: 0.5rem;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+/* .wrapper.product-img {
+    float: left;
+    width: 0%;
+    height: 100%;
+  } */
+.product-img {
+  width: 60%;
+  height: 100%;
+}
+.product-img img {
+  border-radius: 7px 0 0 7px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.product-info {
+  float: left;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.product-text {
+  height: 100%;
+  width: 100%;
+}
+
+.product-text h1 {
+  font-size: 1.3rem;
+  color: #474747;
+  text-align: left;
+  margin: 1rem 1rem;
+}
+
+.product-text h1 {
+  font-family: "Bentham", serif;
+}
+
+.product-text h2 {
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #888787;
+  letter-spacing: 0.2em;
+  margin: 0.5rem 1rem;
+}
+
+.product-text p {
+  width: 95%;
+  font-family: "Playfair Display", serif;
+  color: #8d8d8d;
+  line-height: 1.4em;
+  letter-spacing: 0.07rem;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  font-family: "Suranna", serif;
+  font-size: 34px;
+}
+
+.product-price-btn button {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 1.3rem;
+  border: transparent;
+  border-radius: 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: rgba(82, 189, 158, 0.9);
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: rgba(82, 189, 158, 1);
+}

@@ -1,0 +1,47 @@
+.products__wrapper {
+  margin: 5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: wheat;
+  width: 100%;
+  z-index: 20;
+  padding: 0 5rem;
+}
+.head button {
+  height: 50px;
+  border-radius: 50%;
+}
+.cart--count {
+  position: relative;
+}
+.count {
+  position: absolute;
+  color: white;
+  top: -5px;
+  right: 0;
+  background: red;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  z-index: 10;
+}
